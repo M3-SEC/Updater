@@ -37,7 +37,7 @@ elif [[ $input == 3 ]]; then
     echo "" >> .bashrc
     echo "alias Updater='bash /root/Updater/updater.sh'" >> .bashrc
     exit
-elif [[ $input == 2 ]]; then
+elif [[ $input == 4 ]]; then
     echo "Thanks for using this tool ;)"
     exit
 else 
