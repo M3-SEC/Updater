@@ -26,7 +26,7 @@ if [[ $input == 1 ]]; then
 elif [[ $input == 2 ]]; then 
     clear
     cd
-    rmdir --ignore-fail-on-non-empty Updater
+    rm -rf Updater
     git clone https://github.com/M3-SEC/Updater
     cd Updater
     bash /root/Updater/updater.sh
