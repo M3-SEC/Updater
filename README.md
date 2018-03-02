@@ -11,8 +11,9 @@ bash Updater.sh
 3
 ```
 You shuld exit and open the Terminal to make it work.
+
 Now run
 ```
 Updater
 ```
-And it shuld work.
+and you are done.
