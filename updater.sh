@@ -30,12 +30,14 @@ elif [[ $input == 2 ]]; then
     rm -rf Updater/
     git clone https://github.com/M3-SEC/Updater
     cd Updater
+    clear
     bash /root/Updater/updater.sh
 elif [[ $input == 3 ]]; then
     echo "Installing"
     cd
     echo "" >> .bashrc
     echo "alias Updater='bash /root/Updater/updater.sh'" >> .bashrc
+    echo "Now, please restart your Terminal"
     exit
 elif [[ $input == 4 ]]; then
     echo "Thanks for using this tool ;)"
