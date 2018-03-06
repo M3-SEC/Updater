@@ -16,4 +16,4 @@ Now run
 ```
 Updater
 ```
-and you are done.
+and you are ready to use it.
