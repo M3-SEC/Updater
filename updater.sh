@@ -6,7 +6,7 @@ echo "██║   ██║██████╔╝██║  ██║███
 echo "██║   ██║██╔═══╝ ██║  ██║██╔══██║   ██║   ██╔══╝  ██╔══██╗";
 echo "╚██████╔╝██║     ██████╔╝██║  ██║   ██║   ███████╗██║  ██║";
 echo " ╚═════╝ ╚═╝     ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═╝";
-echo "                                M3-Sec.        V: 0.04    ";
+echo "                                M3-Sec.        V: 0.05    ";
 echo "                                                          ";
 echo "                                                          ";
 echo "                                                          ";
@@ -38,8 +38,9 @@ elif [[ $input == 3 ]]; then
     cd
     echo "" >> .bashrc
     echo "alias Updater='bash /root/Updater/updater.sh'" >> .bashrc
-    echo "Now, please restart your Terminal"
-    exit
+    source .bashrc
+    clear
+    bash /root/Updater/updater.sh
 elif [[ $input == 4 ]]; then
     echo "Thanks for using this tool ;)"
     exit
