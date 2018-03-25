@@ -24,7 +24,7 @@ if [[ $input == 1 ]]; then
     apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y
     clear
     echo "Done!"
-    bash  /root/Updater/updater.sh
+    bash  ~/Updater/updater.sh
 elif [[ $input == 2 ]]; then 
     clear
     cd
@@ -32,15 +32,15 @@ elif [[ $input == 2 ]]; then
     git clone https://github.com/M3-SEC/Updater
     cd Updater
     clear
-    bash /root/Updater/updater.sh
+    bash ~/Updater/updater.sh
 elif [[ $input == 3 ]]; then
     echo "Installing"
     cd
     echo "" >> .bashrc
-    echo "alias Updater='bash /root/Updater/updater.sh'" >> .bashrc
-    source .bashrc
+    echo "alias Updater='bash ~/Updater/updater.sh'" >> .bashrc
+    touch .bashrc
     clear
-    bash /root/Updater/updater.sh
+    bash ~/Updater/updater.sh
 elif [[ $input == 4 ]]; then
     echo "Thanks for using this tool ;)"
     exit
@@ -50,5 +50,5 @@ else
     echo ""
     echo ""
     echo ""
-    bash /root/Updater/updater.sh
+    bash ~/Updater/updater.sh
 fi
