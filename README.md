@@ -1,6 +1,6 @@
 # Updater
 
-Update your Kali-Linux-Machine. PS: Made for Lazy users.
+Update your Linux-Machine. PS: Made for Lazy users.
 
 ## Installation
 Just copy and paste this in to your Terminal.
