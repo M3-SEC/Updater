@@ -22,12 +22,12 @@ echo "5     Exit"
 read input
 if [[ $input == 1 ]]; then
     clear
-    apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y
+    apt-get update -y && apt-get upgrade -Vy && apt-get dist-upgrade -Vy
     clear
     echo "Done!"
 elif [[ $input == 1 ]]; then
     clear
-    apt-get update -y && apt-get full-upgrade -y
+    apt-get update -y && apt-get full-upgrade -Vy
     clear
     echo "Done!"
 elif [[ $input == 3 ]]; then 
